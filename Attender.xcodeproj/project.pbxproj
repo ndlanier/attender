@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		087701241BC2E928005BC68B /* WRFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087701231BC2E928005BC68B /* WRFile.swift */; settings = {ASSET_TAGS = (); }; };
+		087701261BC30162005BC68B /* orglist.txt in Resources */ = {isa = PBXBuildFile; fileRef = 087701251BC30162005BC68B /* orglist.txt */; settings = {ASSET_TAGS = (); }; };
 		0887FA751BC1C58200C0EED7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0887FA741BC1C58200C0EED7 /* AppDelegate.swift */; };
 		0887FA771BC1C58200C0EED7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0887FA761BC1C58200C0EED7 /* ViewController.swift */; };
 		0887FA7A1BC1C58200C0EED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0887FA781BC1C58200C0EED7 /* Main.storyboard */; };
@@ -14,6 +16,8 @@
 		0887FA7F1BC1C58200C0EED7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0887FA7D1BC1C58200C0EED7 /* LaunchScreen.storyboard */; };
 		0887FA8A1BC1C58200C0EED7 /* AttenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0887FA891BC1C58200C0EED7 /* AttenderTests.swift */; };
 		0887FA951BC1C58200C0EED7 /* AttenderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0887FA941BC1C58200C0EED7 /* AttenderUITests.swift */; };
+		0887FAA31BC1D19000C0EED7 /* AddOrgController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0887FAA21BC1D19000C0EED7 /* AddOrgController.swift */; settings = {ASSET_TAGS = (); }; };
+		08E1253C1BC201DB00FDCE1C /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E1253B1BC201DB00FDCE1C /* Database.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		087701231BC2E928005BC68B /* WRFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRFile.swift; sourceTree = "<group>"; };
+		087701251BC30162005BC68B /* orglist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = orglist.txt; sourceTree = "<group>"; };
 		0887FA711BC1C58200C0EED7 /* Attender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0887FA741BC1C58200C0EED7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0887FA761BC1C58200C0EED7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,8 @@
 		0887FA901BC1C58200C0EED7 /* AttenderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttenderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0887FA941BC1C58200C0EED7 /* AttenderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttenderUITests.swift; sourceTree = "<group>"; };
 		0887FA961BC1C58200C0EED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0887FAA21BC1D19000C0EED7 /* AddOrgController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddOrgController.swift; sourceTree = "<group>"; };
+		08E1253B1BC201DB00FDCE1C /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +106,11 @@
 			isa = PBXGroup;
 			children = (
 				0887FA741BC1C58200C0EED7 /* AppDelegate.swift */,
+				087701251BC30162005BC68B /* orglist.txt */,
+				08E1253B1BC201DB00FDCE1C /* Database.swift */,
+				087701231BC2E928005BC68B /* WRFile.swift */,
 				0887FA761BC1C58200C0EED7 /* ViewController.swift */,
+				0887FAA21BC1D19000C0EED7 /* AddOrgController.swift */,
 				0887FA781BC1C58200C0EED7 /* Main.storyboard */,
 				0887FA7B1BC1C58200C0EED7 /* Assets.xcassets */,
 				0887FA7D1BC1C58200C0EED7 /* LaunchScreen.storyboard */,
@@ -192,6 +204,12 @@
 				TargetAttributes = {
 					0887FA701BC1C58200C0EED7 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = QG634TTUXG;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+						};
 					};
 					0887FA841BC1C58200C0EED7 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -229,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0887FA7F1BC1C58200C0EED7 /* LaunchScreen.storyboard in Resources */,
+				087701261BC30162005BC68B /* orglist.txt in Resources */,
 				0887FA7C1BC1C58200C0EED7 /* Assets.xcassets in Resources */,
 				0887FA7A1BC1C58200C0EED7 /* Main.storyboard in Resources */,
 			);
@@ -255,8 +274,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0887FAA31BC1D19000C0EED7 /* AddOrgController.swift in Sources */,
 				0887FA771BC1C58200C0EED7 /* ViewController.swift in Sources */,
+				08E1253C1BC201DB00FDCE1C /* Database.swift in Sources */,
 				0887FA751BC1C58200C0EED7 /* AppDelegate.swift in Sources */,
+				087701241BC2E928005BC68B /* WRFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,10 +420,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Attender/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nathaniellanier.Attender;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -409,10 +434,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Attender/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nathaniellanier.Attender;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -483,6 +511,7 @@
 				0887FA9B1BC1C58200C0EED7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0887FA9C1BC1C58200C0EED7 /* Build configuration list for PBXNativeTarget "AttenderTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +520,7 @@
 				0887FA9E1BC1C58200C0EED7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0887FA9F1BC1C58200C0EED7 /* Build configuration list for PBXNativeTarget "AttenderUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +529,7 @@
 				0887FAA11BC1C58200C0EED7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
