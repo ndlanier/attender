@@ -17,6 +17,8 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
     var strSelOrg : String = ""
     var loadedB4 = false
     override func viewDidLoad() {
+        
+        //var readFile(var
         super.viewDidLoad()
         
         var textIn : NSString = ""
@@ -33,6 +35,7 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
             //reading
             do {
                 textIn = try NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding)
+                
             }
             catch {/* error handling here */}
             
@@ -53,9 +56,8 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
         viewDidLoad()
     }
     func fillDat (text2 : NSString){
-        while text2 != "" {
-            orgDat = text2.componentsSeparatedByString(",")
-        }
+        orgDat = text2.componentsSeparatedByString(",")
+
     }
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int{
@@ -66,7 +68,7 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
         return orgDat.count
     }
     
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return orgDat[row]
     }
     

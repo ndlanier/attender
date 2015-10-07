@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+let dirDocuments : NSString = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] as String
+
 class Master {
     var orgs = [Organization] ()
     

@@ -61,36 +61,38 @@ class AddOrgController : UIViewController,UIPickerViewDataSource,UIPickerViewDel
     func saveOrg () {
         var newOrg = Organization(name: txtOrgName.text!, day: strDay, url: txtUrl.text!)
         
-        let file = txtOrgName.text! + ".txt" //this is the file. we will write to and read from it
+        let file = "\(txtOrgName.text!).txt" //this is the file. we will write to and read from it
         
-        let text = "Org Name: " + newOrg.name + "\nMeeting Day: " + newOrg.day + "\nWebsite: " + newOrg.url //just a text
+        let text = "Org Name: \(newOrg.name) \nMeeting Day: \(newOrg.day) \nWebsite: \(newOrg.url)" //just a text
         
-        if let dir : NSString = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.AllDomainsMask, true).first {
-            let path = dir.stringByAppendingPathComponent(file);
+        let path = dirDocuments.stringByAppendingPathComponent(file);
             
-            //writing
-            do {
-                try text.writeToFile(path, atomically: false, encoding: NSUTF8StringEncoding)
-            }
-            catch {/* error handling here */}
+                
+        //writing
+        do {
+            try text.writeToFile(path, atomically: false, encoding: NSUTF8StringEncoding)
+        }catch {/* error handling here */}
+        
+            
             addOrgToList(newOrg)
-    }
     }
     
     func addOrgToList (wrtOrg : Organization) {
+        let newFile = NSFileManager.defaultManager()
         let file = "orglist.txt" //this is the file. we will write to and read from it
+        var text = "\(wrtOrg.name)," //just a text
         
-        let text = wrtOrg.name + "," //just a text
-        
-        if let dir : NSString = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.AllDomainsMask, true).first {
-            let path = dir.stringByAppendingPathComponent(file);
-            
-            //writing
+        let path = dirDocuments.stringByAppendingPathComponent(file)
+        if NSFileManager.defaultManager().fileExistsAtPath(path) == true {
+            text = "\(text)\(NSFileManager.defaultManager().contentsAtPath(path))"
             do {
-                try text.writeToFile(path, atomically: false, encoding: NSUTF8StringEncoding)
-            }
-            catch {/* error handling here */}
+            try NSFileManager.defaultManager().removeItemAtPath(path)
+            }catch {}
         }
+        do {
+            try text.writeToFile(path, atomically: false, encoding: NSUTF8StringEncoding)
+        } catch {/*error handling here*/}
+        
     }
     
     

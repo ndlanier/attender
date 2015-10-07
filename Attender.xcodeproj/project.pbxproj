@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		087701241BC2E928005BC68B /* WRFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087701231BC2E928005BC68B /* WRFile.swift */; settings = {ASSET_TAGS = (); }; };
-		087701261BC30162005BC68B /* orglist.txt in Resources */ = {isa = PBXBuildFile; fileRef = 087701251BC30162005BC68B /* orglist.txt */; settings = {ASSET_TAGS = (); }; };
 		0887FA751BC1C58200C0EED7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0887FA741BC1C58200C0EED7 /* AppDelegate.swift */; };
 		0887FA771BC1C58200C0EED7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0887FA761BC1C58200C0EED7 /* ViewController.swift */; };
 		0887FA7A1BC1C58200C0EED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0887FA781BC1C58200C0EED7 /* Main.storyboard */; };
@@ -38,8 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		087701231BC2E928005BC68B /* WRFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRFile.swift; sourceTree = "<group>"; };
-		087701251BC30162005BC68B /* orglist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = orglist.txt; sourceTree = "<group>"; };
 		0887FA711BC1C58200C0EED7 /* Attender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0887FA741BC1C58200C0EED7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0887FA761BC1C58200C0EED7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,9 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				0887FA741BC1C58200C0EED7 /* AppDelegate.swift */,
-				087701251BC30162005BC68B /* orglist.txt */,
 				08E1253B1BC201DB00FDCE1C /* Database.swift */,
-				087701231BC2E928005BC68B /* WRFile.swift */,
 				0887FA761BC1C58200C0EED7 /* ViewController.swift */,
 				0887FAA21BC1D19000C0EED7 /* AddOrgController.swift */,
 				0887FA781BC1C58200C0EED7 /* Main.storyboard */,
@@ -247,7 +241,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0887FA7F1BC1C58200C0EED7 /* LaunchScreen.storyboard in Resources */,
-				087701261BC30162005BC68B /* orglist.txt in Resources */,
 				0887FA7C1BC1C58200C0EED7 /* Assets.xcassets in Resources */,
 				0887FA7A1BC1C58200C0EED7 /* Main.storyboard in Resources */,
 			);
@@ -278,7 +271,6 @@
 				0887FA771BC1C58200C0EED7 /* ViewController.swift in Sources */,
 				08E1253C1BC201DB00FDCE1C /* Database.swift in Sources */,
 				0887FA751BC1C58200C0EED7 /* AppDelegate.swift in Sources */,
-				087701241BC2E928005BC68B /* WRFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
