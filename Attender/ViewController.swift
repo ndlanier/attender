@@ -12,6 +12,7 @@ import UIKit
 class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate{
 
 
+    @IBOutlet weak var txtFile: UITextView!
     @IBOutlet weak var selOrgs: UIPickerView!
     var orgDat = [""]
     var strSelOrg : String = ""
@@ -43,6 +44,7 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
         
         if loadedB4 == true {
             fillDat(textIn)
+            txtFile.text = String(textIn)
         }
         loadedB4 = true
     }

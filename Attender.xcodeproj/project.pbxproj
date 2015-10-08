@@ -49,7 +49,7 @@
 		0887FA901BC1C58200C0EED7 /* AttenderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttenderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0887FA941BC1C58200C0EED7 /* AttenderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttenderUITests.swift; sourceTree = "<group>"; };
 		0887FA961BC1C58200C0EED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0887FAA21BC1D19000C0EED7 /* AddOrgController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddOrgController.swift; sourceTree = "<group>"; };
+		0887FAA21BC1D19000C0EED7 /* AddOrgController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AddOrgController.swift; sourceTree = "<group>"; };
 		08E1253B1BC201DB00FDCE1C /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

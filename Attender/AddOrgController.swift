@@ -78,15 +78,17 @@ class AddOrgController : UIViewController,UIPickerViewDataSource,UIPickerViewDel
     }
     
     func addOrgToList (wrtOrg : Organization) {
-        let newFile = NSFileManager.defaultManager()
         let file = "orglist.txt" //this is the file. we will write to and read from it
         var text = "\(wrtOrg.name)," //just a text
         
         let path = dirDocuments.stringByAppendingPathComponent(file)
         if NSFileManager.defaultManager().fileExistsAtPath(path) == true {
-            text = "\(text)\(NSFileManager.defaultManager().contentsAtPath(path))"
             do {
-            try NSFileManager.defaultManager().removeItemAtPath(path)
+            let strTest = try String(contentsOfFile:path, encoding: NSUTF8StringEncoding)
+            text = "\(text)\(strTest)"
+            } catch {}
+            do { //This is to clear up the data and make sure there are no duplicates
+                try NSFileManager.defaultManager().removeItemAtPath(path)
             }catch {}
         }
         do {

@@ -41,7 +41,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mun-Ib-PBb">
-                                <rect key="frame" x="251" y="404" width="98" height="30"/>
+                                <rect key="frame" x="251" y="397" width="98" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Past Meetings"/>
                             </button>
@@ -49,6 +49,9 @@
                                 <rect key="frame" x="255" y="359" width="91" height="30"/>
                                 <animations/>
                                 <state key="normal" title="New Meeting"/>
+                                <connections>
+                                    <segue destination="HEA-yg-opJ" kind="show" id="hAK-p3-gVy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pL-Gg-n0e">
                                 <rect key="frame" x="527" y="85" width="53" height="30"/>
@@ -197,6 +200,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7d3-Ta-1Fd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-372" y="424"/>
+        </scene>
+        <!--scnNewMtg-->
+        <scene sceneID="ZkB-MW-SBp">
+            <objects>
+                <viewController id="HEA-yg-opJ" userLabel="scnNewMtg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9gM-5u-AFS"/>
+                        <viewControllerLayoutGuide type="bottom" id="SeZ-Ko-gYF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H9z-ac-pru">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iho-dN-p5k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="429"/>
         </scene>
     </scenes>
 </document>
